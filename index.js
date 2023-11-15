@@ -84,8 +84,8 @@ let charTotal = 0;   //! same process from above about adding the elements toget
 
 for (let i = 0; i < namesLengths.length; i++) {
     charTotal += namesLengths[i];
-    console.log("Char Running Total:", charTotal);
 }
+console.log("Total Characters in namesLengths array: " + charTotal);
 
 //------------------------------------------------------------------------------------------
 
@@ -122,7 +122,7 @@ function sumNumbersArray(array) {      //! declares a function that takes 1 para
         //! same loop as previously used for adding the elements together
     for (let i = 0; i < array.length; i++) { 
         total += array[i];
-        console.log("Total: ", total);
+        console.log("Running Total: ", total);
     }
 
     if (total > 100) {             //! conditional statement that outputs true if total is > 100
@@ -179,11 +179,11 @@ function twoAverages(array1, array2) {    //! declares a function with 2 array p
     let average1 = total1 / array1.length;     //! finds the avaerage of array1
     let average2 = total2 / array2.length;     //! finds the avaerage of array2
 
-    console.log("Averages: ", average1, average2);
+    console.log(`Array1 Averages: ${average1} - Array2 Averages: ${average2}`);
 
     if (average1 > average2) {         
         //! conditional statement that is true is array1 average is > array2 average 
-        console.log(true);
+        console.log("Average1 is greater than Average2: " + true);
         return true;
     } else if (average1 < average2) {   
         //! it returns false if array1 average is < array2 average
