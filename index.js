@@ -49,9 +49,9 @@ console.log("Average of Names: ", namesAverage);
 let concatenatedNames = ''; //!holding container for new string to concat
 
 for (let i = 0; i < names.length; i++) {    //! for loop to iterate through each element
-    concatenatedNames = concatenatedNames.concat(names[i])   
+    concatenatedNames = concatenatedNames.concat(names[i] + " ");   
         //! uses the .concat method here to concate the elements together
-    console.log(i, "Names concatented", concatenatedNames)
+    console.log(i, "Names concatented", concatenatedNames);
 }
 
 //------------------------------------------------------------------------------------------
